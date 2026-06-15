@@ -1,4 +1,4 @@
-# type-infer-103fea
+# type-infer-445dd6
 
 A Rust type-infer utility.
 

